@@ -26,6 +26,11 @@ process.report.writeReport("test", new Error(JSON.stringify(process.env))); expo
 
 It will leak your server environment as a file. 
 
+References:
+
+- [Evaluating JavaScript code via `import()`](https://2ality.com/2019/10/eval-via-import.html)
+- [process.report.writeReport([filename][, err])](https://nodejs.org/api/process.html#processreportwritereportfilename-err)
+
 ## Dev
 
     yarn install
